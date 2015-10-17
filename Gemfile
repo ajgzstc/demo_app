@@ -1,17 +1,17 @@
-#source 'https://rubygems.org'
-source 'http://ruby.taobao.org'
+source 'https://rubygems.org'
+#source 'https://ruby.taobao.org'
 gem 'rails', '3.2.16'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group:production do
+group :production do
    gem 'pg'
    gem 'heroku'
 end
 
-group:development, :test do
-   gem'splite3'
+group :development, :test do
+   gem 'sqlite3'
 end
 
 
