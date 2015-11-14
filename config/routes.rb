@@ -1,12 +1,12 @@
 DemoApp::Application.routes.draw do
   
-  # match'/signup',:to =>'users#new'
+  match'/signup',:to =>'users#new'
 
   match'/contact',:to =>'pages#contact'
 
-  match'/contact',:to =>'pages#about'
+  match'/about',:to =>'pages#about'
 
-  match'/contact',:to =>'pages#help'
+  match'/help',:to =>'pages#help'
   
   root :to =>'pages#home'
 
